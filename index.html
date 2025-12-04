@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ar">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>RTC RESPECT - Roleplay</title>
+<style>
+  body {margin:0; font-family:Tahoma; background:#1a0f24; color:#fff;}
+  header {background:#4b2a77; padding:20px; text-align:center; font-size:28px; font-weight:bold;}
+  nav {background:#341b52; padding:10px; display:flex; gap:15px; justify-content:center;}
+  nav a {color:#d7b7ff; text-decoration:none; font-size:18px; padding:8px 16px; border-radius:8px; transition:0.3s;} 
+  nav a:hover {background:#5a3390;}
+  section {display:none; padding:30px; animation:fade 0.5s ease;} 
+  @keyframes fade {from{opacity:0;} to{opacity:1;}}
+  .card {background:#2b1840; padding:20px; margin:15px 0; border-radius:12px;}
+  .title {font-size:24px; margin-bottom:15px; color:#d7b7ff;}
+</style>
+<script>
+function showPage(id){
+  document.querySelectorAll('section').forEach(s=>s.style.display='none');
+  document.getElementById(id).style.display='block';
+}
+</script>
+</head>
+<body>
+<header>RTC RESPECT ROLEPLAY</header>
+<nav>
+  <a href="#" onclick="showPage('home')">الرئيسية</a>
+  <a href="#" onclick="showPage('police')">الشرطة</a>
+  <a href="#" onclick="showPage('gangs')">العصابات</a>
+  <a href="#" onclick="showPage('rules')">القوانين</a>
+  <a href="#" onclick="showPage('leaks')">التسريبات</a>
+</nav>
+
+<nav style="background:#4b2a77; padding:10px; display:flex; gap:15px; justify-content:center; margin-top:5px;">
+  <a href="#" onclick="showPage('leaders')">القادة</a>
+</nav>
+
+<section id="home" style="display:block;">
+  <div class="title">مرحباً بك في RTC RESPECT</div>
+  <div class="card">سيرفر رول بلاي مخصص لتجربة فريدة وبنظام متكامل وأجواء ممتعة.</div>
+</section>
+
+<section id="police">
+  <div class="title">قسم الشرطة</div>
+  <div class="card">قائد الشرطة – الصورة + الوصف</div>
+  <div class="card">نائب القائد – الصورة + الوصف</div>
+</section>
+
+<section id="gangs">
+  <div class="title">قسم العصابات</div>
+  <div class="card">عصابة 1 – معلومات</div>
+  <div class="card">عصابة 2 – معلومات</div>
+</section>
+
+<section id="rules">
+  <div class="title">قوانين السيرفر</div>
+  <div class="card">ضع هنا القوانين...</div>
+</section>
+
+<section id="leaks">
+  <div class="title">قسم التسريبات</div>
+  <div class="card">هنا يتم وضع التسريبات أو أخبار داخلية أو أي محتوى تُريد عرضه.</div>
+</section>
+
+<section id="leaders" style="display:none;">
+  <div class="title">قسم القادة</div>
+
+  <div class="card" style="text-align:center;">
+    <img src="leader1.png" alt="قائد 1" style="width:200px; border-radius:12px;">
+    <div style="margin-top:10px; font-size:20px; color:#d7b7ff;">القائد الأول</div>
+  </div>
+
+  <div class="card" style="text-align:center;">
+    <img src="leader2.png" alt="قائد 2" style="width:200px; border-radius:12px;">
+    <div style="margin-top:10px; font-size:20px; color:#d7b7ff;">القائد الثاني</div>
+  </div>
+
+  <div class="card" style="text-align:center;">
+    <img src="leader3.png" alt="قائد 3" style="width:200px; border-radius:12px;">
+    <div style="margin-top:10px; font-size:20px; color:#d7b7ff;">القائد الثالث</div>
+  </div>
+
+  <div class="card" style="text-align:center;">
+    <img src="leader4.png" alt="قائد 4" style="width:200px; border-radius:12px;">
+    <div style="margin-top:10px; font-size:20px; color:#d7b7ff;">القائد الرابع</div>
+  </div>
+
+  <div class="card" style="text-align:center;">
+    <img src="leader5.png" alt="قائد 5" style="width:200px; border-radius:12px;">
+    <div style="margin-top:10px; font-size:20px; color:#d7b7ff;">القائد الخامس</div>
+  </div>
+</section>
+
+</body>
+</html>
